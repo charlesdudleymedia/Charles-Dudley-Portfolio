@@ -35,7 +35,8 @@
   .bio{background:linear-gradient(180deg,rgba(214,178,94,.12),rgba(18,18,22,.4) 60%);border:1px solid rgba(214,178,94,.25);border-radius:18px;padding:20px;max-width:780px;margin:0 auto 28px;}
   .section-title{display:flex;align-items:center;gap:10px;font-size:18px;letter-spacing:.8px;text-transform:uppercase;color:var(--gold);margin:8px 0 14px;}
   .section-title .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px rgba(214,178,94,.7);}
-  .bio p{margin:0;color:var(--text);font-size:clamp(14px,2.3vw,16px);}
+  .bio p { margin: 0 0 12px; }     /* bottom space between paragraphs */
+.bio p:last-child { margin-bottom: 0; }
   /* Grid: 4 columns on desktop, 2 on tablets, 1 on mobile */
   .grid{display:grid;grid-template-columns:1fr;gap:16px;max-width:780px;margin:0 auto;}
   @media (min-width: 640px){ .grid{ grid-template-columns: repeat(2, 1fr); } }
